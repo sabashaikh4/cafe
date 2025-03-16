@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idli Dosa Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8f0;
+            text-align: center;
+        }
+
+        .menu-container {
+            padding: 30px;
+        }
+
+        .menu-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .order-btn {
+            background: #2E8B57;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .order-btn:hover {
+            background: #228B22;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Idli Dosa Cafe</h1>
+    <p>Fresh & Delicious South Indian Food</p>
+
+    <div class="menu-container">
+        <div class="menu-grid">
+            <!-- Plain Dosa -->
+            <div class="menu-item">
+                <img src="/images/dosa2.jpg" alt="Plain Dosa">
+                <h2>Dosa</h2>
+                <p>₹50</p>
+                <a href="order" class="order-btn">Order Now</a>
+            </div>
+
+            <!-- Masala Dosa -->
+            <div class="menu-item">
+                <img src="/images/idli.jpg" alt="Idli">
+                <h2>Idli</h2>
+                <p>₹40</p>
+                <a href="order" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
