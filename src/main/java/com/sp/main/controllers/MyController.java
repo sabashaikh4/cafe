@@ -9,19 +9,6 @@ import com.sp.main.entities.User;
 
 @Controller
 public class MyController {
-//	@GetMapping("/order")
-//	 public String openOrderPage(Model model) {
-//		
-//		model.addAttribute("user", new User());
-//		 return"order";
-//	 }
-	
-	
-//	@PostMapping("/confirmOrder")
-//	public String ConfirmOrder() {
-//		return "";
-//	}
-
 	@GetMapping("/order")
 	 public String openOrderPage() {
 
