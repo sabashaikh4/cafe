@@ -25,4 +25,47 @@ public class UserServiceImpl implements UserService {
 				return false;
 			}
 		}
+
+	// RestFull API
+		
+		// create new user(Post)
+		@Override
+		public User createUser(User user) {
+		
+			return userRepository.save(user);
+		}
+
+		// get user details(Get)
+		@Override
+		public List<User> getAllUsers() {
+			
+			return userRepository.findAll();
+		}
+		// get user details by id
+		@Override
+		public Optional<User> getUserDetail(int id) {
+			return userRepository.findById(id);
+		}
+
+		
+		//update user details(put)
+		@Override
+		public User updateUserDetail(int id, User newUser) {
+			User userData = userRepository.findById(id).orElse(null);
+		    
+			if(userData != null) {
+				return userRepository.save(newUser);
+			}
+			else
+			{
+				throw new RuntimeException("User not Found with id :"+ id);
+			}
+		}
+
+		// delete user 
+		@Override
+		public void deleteUser(int id) {
+			userRepository.deleteById(id);
+			
+		}
 }
