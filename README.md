@@ -23,6 +23,8 @@ A simple Spring Boot web application where customers can place orders for idli a
 
 ### 🧾 Bill Page
 ![Bill_page](cafe/src/main/resources/static/images/billShow.png)
+![Bill_page](cafe/src/main/resources/static/images/billShow.png)
+
 
 # Technologies Used
 
@@ -70,5 +72,5 @@ Use Insomnia or Postman.
 ![GetUser](src/main/resources/static/images/GetUser.png)
 
 
-### Put User detail by ID
+### Put User details by ID
 ![put user details by id](src/main/resources/static/images/Put.png)
