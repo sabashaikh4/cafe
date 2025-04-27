@@ -1,18 +1,22 @@
 package com.sp.main.services;
 
+import java.util.List;
+import java.util.Optional;
+
 import com.sp.main.entities.User;
 
 public interface UserService {
 
 	public boolean Saveorders(User user);
+	
 
-      // API creates a new user
+	// API create new user
 	public User createUser(User user);
 	
 	// get  user details 
 	public List<User> getAllUsers();
 	
-	//get user details by id
+	//get user detail by id
 	public Optional<User> getUserDetail(int id);
 	
 	// put (Update user detail)
@@ -20,4 +24,5 @@ public interface UserService {
 	
 	// delete
 	public void deleteUser(int id);
+
 }

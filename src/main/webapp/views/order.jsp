@@ -1,6 +1,4 @@
 
-
-
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,9 +90,12 @@
 <body>
 
     <div class="container">
-        <h2>Confirm Your Order</h2><form action="confirmOrder" method="post">
+        <h2>Confirm Your Order</h2>
+		<!--<form action="confirmOrder" method="post">-->
+			<form action="${pageContext.request.contextPath}/order/confirm" method="post">
+
     <label for="name">Name:</label>
-    <input type="text" id="name" name="customerName" required>
+    <input type="text" id="customerName" name="customerName" required>
 
     <label for="address">Address:</label>
     <input type="text" id="address" name="address" required>
