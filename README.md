@@ -23,7 +23,7 @@ A simple Spring Boot web application where customers can place orders for idli a
 
 ### 🧾 Bill Page
 
-![Bill_page](cafe/src/main/resources/static/images/billShow.png)
+![Bill_page](src/main/resources/static/images/Bill.png)
 # Technologies Used
 
 * Java
